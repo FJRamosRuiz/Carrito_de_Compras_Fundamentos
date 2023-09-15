@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Carrito de compras</title>
+   
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+   <link rel="stylesheet" href="./css/style.css">
+
+   <script src="./js/main.js" type="module" defer></script>
+
+</head>
+
+<body>
+
+   <!-- Loader -->
+   <div class="loader">
+      <div class="loader__container">
+         <span></span>
+      </div>
+   </div>
+
+<!--header-->
+
+   <header class="header">
+      <nav class="nav container">
+         <a href="/" class="nav__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="logo--icon">
+               <path fill="currentColor" d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+               </path>
+            </svg>
+         </a>
+         <div class="nav__menu">
+            <button type="button" class="nav_btn btn--close">
+               <i class="bx bx-x"></i>
+            </button>
+            <ul class="nav__list">
+               <li class="nav__items">
+                  <a href="#" class="nav__link">Inicio</a>
+               </li>
+               <li class="nav__items">
+                  <a href="#" class="nav__link">Productos</a>
+               </li>
+            </ul>
+         </div>
+         <div class="nav__buttons">
+            <button type="button" class="nav__btn btn--cart">
+               <i class='bx bxs-shopping-bags' ></i>
+               <span class="notify">0</span>
+            </button>
+            <button type="button" class="nav__btn btn--menu">
+               <i class='bx bxs-grid' ></i>
+            </button>
+         </div>
+      </nav>
+   </header>
+
+<!-- main -->
+
+   <main class="main">
+
+      <section class="products section">
+         <h2 class="products__title section--title">Productos</h2>
+         <div class="products__container container"></div>
+      </section>
+   </main>    
+
+   <!-- Cart -->
+   <div class="cart">
+      <div class="cart__container">
+         <div class="cart__header">
+            <h3 class="cart__title">Carrito de Compras</h3>
+            <button type="button" class="cart__btn btn--close">
+               <i class="bx bx-x"></i>
+            </button>
+         </div>
+         <div class="cart__body"> </div>
+         <div class="cart__footer">
+            <div class="cart__count">
+               <span class="cart__count--text">Articulos</span>
+               <span class="cart__count--item">0</span>
+            </div>
+            <div class="cart__total">
+               <span class="cart__total--text">Total</span>
+               <span class="cart__total--item">$0</span>
+            </div>
+            <button type="button" class="cart__btn btn--buy">Comprar</button>
+         </div>
+      </div>
+   </div>
+
+   <!-- Footer -->
+   <footer class="footer section">
+      <div class="footer__container container">
+         <div class="footer__top">
+            <div class="footer__left">
+               <h3 class="footer__title">Sobre Academlo</h3>
+               <p class="footer__text">Estudia con clases en vivo, haciendo ejercicios diarios, proyectos semanales y participando en eventos de comunidad.</p>
+            </div>
+            <div class="footer__right">
+               <h3 class="footer__title">Redes Sociales</h3>
+               <ul class="footer__social">
+                  <li class="footer__item">
+                     <a href="https://www.facebook.com/" target="_blank" class="footer__link">
+                        <i class="bx bxl-facebook"></i>
+                     </a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="https://twitter.com/" target="_blank" class="footer__link">
+                        <i class="bx bxl-twitter" ></i>
+                     </a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="https://www.instagram.com/" target="_blank" class="footer__link">
+                        <i class="bx bxl-instagram"></i>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="footer__bottom">
+            <p class="footer__text">Todos los derechos reservados</p>
+         </div>
+      </div>
+   </footer>
+
+</body>
+
+</html>
